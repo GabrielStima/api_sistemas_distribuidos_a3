@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #023047
+}
+
+footer {
+    width: 100%;
+    height: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 2px 0;
+    margin: 0;
+}
+
+table {
+    table-layout: fixed;
+    width: 90rem;
+    display: table;
+    border-radius: 4px;
+}
+
+tr {
+    width: 100%;
+    display: table;
+    box-sizing: border-box;
+}
+
+th {
+    padding: 20px 15px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 14%;
+}
+
+td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    width: 14%;
+}
+
+form {
+    width: 75%;
+    max-height: 80vh;
+    border-radius: 4px;
+    background-color: #f7f7f7;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    min-height: calc(100vh - (2rem + 20px));
+    background-color: #480ca8;
+    padding-top: 2rem;
+}
+
+.page .headPage {
+    color: #f7f7f7;
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headPage a{
+    padding: 10px 2rem;
+    color: #023047;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+    border: none;
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.page .presentation {
+    color: #f7f7f7;
+    width: 75%;
+}
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    z-index: 10;
+    overflow: hidden;
+    box-shadow: 2px 0 18px rgba(0, 0, 0, 0.26);
+}
+
+.menu li a,
+.menu li div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 5em;
+    line-height: 5em;
+    text-align: center;
+    color: #480ca8;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.1s ease-in-out;
+}
+
+.menu li a:hover,
+.menu li div.menu-button {
+    background: #480ca8;
+    color: #f7f7f7;
+}
+
+.rodape {
+    color: #4a4a4a;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+}
+
+.table-header {
+    background-color: #f7f7f7;
+    color: #480ca8;
+}
+
+.table-header th {
+    color: #4a4a4a;
+}
+
+.table-body {
+    height: 70vh;
+    width: inherit;
+    overflow-y: scroll;
+    display: block;
+    background-color: #d5d3d3;
+}
+
+.table-body tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.accessButton {
+    padding: 5px 30%;
+    text-decoration: none;
+    color: #f7f7f7;
+    background-color: #480ca8;
+    border-radius: 4px;
+}
+
+.table-body tr:last-child {
+    border-bottom: none;
+}
+
+.form-group {
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.form-group input {
+    margin: 10px 0;
+    padding: 10px;
+    border: solid 1px #b9b9b9;
+    border-radius: 4px;
+}
+
+.action-group {
+    width: 75%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.action-group button {
+    border: none;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 2rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.action-group button:hover {
+    color: #f7f7f7;
+    background-color: #7858aa;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 4px;
+    border: none;
+    width: 40%;
+}
+
+.actionModal{
+    display: flex;
+    margin: 20px;
+    justify-content: flex-end;  
+}
+
+.actionModal button{
+    padding: 10px 2rem;
+    margin-left: 5px;
+    background-color: #480ca8;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.actionModal button:hover,
+.actionModal button:focus {
+    background-color: #7858aa;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
