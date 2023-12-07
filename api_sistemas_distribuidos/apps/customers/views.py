@@ -5,7 +5,7 @@ from .models import Customer
 def listCustomers(request):
     template_name = 'listCustomers/index.html'
     context = {"listCustomers":Customer.objects.all()}
-    
+
     for item in context['listCustomers']:
         item.link = f'../editRecords?type=customer&id={item.id}'
 
